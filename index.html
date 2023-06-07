@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Divisor de conta</title>
+  </head>
+
+  <body>
+    <form id="formCadastro">
+      <h1>Cadastro de Cliente e Produtos</h1>
+
+      <div>
+        <label for="cliente">Cliente:</label>
+        <input
+          type="text"
+          id="cliente"
+          placeholder="Nome do cliente"
+          required
+        />
+      </div>
+
+      <div id="produtosContainer">
+        <div>
+          <label for="produto">Produto:</label>
+          <select id="produto" placeholder="Produto consumido" required>
+            <option value="Pizza">pizza</option>
+            <option value="Rodizio">Rodizio</option>
+            <option value="Temaki">Temaki</option>
+            <option value="Suco">Suco</option>
+            <option value="Refrigerante">Refrigerante</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" id="quantidade" required placeholder="0" />
+        </div>
+        <div>
+          <label for="divisaoConta">O produto será dividido com quantas pessoas?</label>
+          <input type="number" id="divisaoConta" placeholder="0"/>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="adicionarProduto">Adicionar Produto</button>
+      </div>
+
+      <div>
+        <label for="pagarTaxa">Pagar os 10% do serviço:</label>
+        <input type="checkbox" id="pagarTaxa" />
+      </div>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <button type="reset" id="resertTable">Limpar</button>
+    <section class="tabela">
+      <table id="tabela-cliente"></table>
+    </section>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

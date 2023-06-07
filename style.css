@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+  padding: 10px;
+  position: absolute;
+}
+h1 {
+  font-size: 14px;
+  color: rgb(170, 17, 170);
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#formCadastro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 50%;
+  margin-left: 10px;
+}
+
+section {
+  width: 50%;
+}
+label {
+  font-size: 12px;
+}
+input {
+  font-size: 12px;
+  border: none;
+  cursor: text;
+}
+input#produto:focus,
+input#cliente:focus {
+  outline: 2px solid rgb(212, 166, 255);
+  border-radius: 5px;
+}
+#adicionarProduto {
+  margin-top: 10px;
+  background-color: rgb(212, 166, 255);
+  width: 90px;
+  height: 20px;
+  font-size: 8px;
+  border: none;
+  border-radius: 50px;
+}
+
+#adicionarProduto:hover {
+  background-color: rgb(180, 119, 236);
+  cursor: pointer;
+}
+
+label#pagarTaxa {
+  font-size: 10px;
+}
+input[type="checkbox"] {
+  width: 7px;
+  height: 7px;
+}
+
+button[type="submit"] {
+  color: rgb(170, 17, 170);
+  font-size: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  border: 1px solid gainsboro;
+  width: 50%;
+  border-radius: 30px;
+
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgba(233, 233, 233, 0.919);
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 200px;
+
+}
+th, td{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+}
+
+input#quantidade::-webkit-inner-spin-button,
+input#quantidade::-webkit-outer-spin-button {
+
+  margin: 0;
+}
+
+section{
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 1px solid rgb(196, 17, 184);
+}
+
+#resertTable{
+  margin-top: 10px;
+  margin-left: 10px;
+
+
+}
